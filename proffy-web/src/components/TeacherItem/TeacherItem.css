@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    outline: none;
     transition: 0.2s;
 }
 
