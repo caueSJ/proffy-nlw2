@@ -38,6 +38,24 @@
     border-bottom: 1px solid var(--color-line-in-white);
 }
 
+#TeacherForm main fieldset legend button {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font: 700 1.6rem Archivo;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#TeacherForm main fieldset legend button:hover {
+    color: var(--color-primary-dark);
+}
+
+#TeacherForm main fieldset .input-block + .textarea-block,
+#TeacherForm main fieldset .select-block + .input-block {
+    margin-top: 2.4rem;
+}
+
 #TeacherForm main label {
     color: var(--color-text);
 }
@@ -95,6 +113,16 @@
     #TeacherForm main fieldset {
         padding: 0 6.4rem;        
     }
+
+    #TeacherForm main .schedule-item {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 1.6rem;
+    }
+
+    #TeacherForm main .schedule-item .input-block {
+        margin-top: 0 !important;
+    }    
 
     #TeacherForm main footer {
         padding: 4rem 6.4rem;
